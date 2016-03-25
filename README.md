@@ -7,12 +7,12 @@ Act as a real world example to Pseudo's development forward in a similar way to 
 
 The language:
 
-	A very simple ruby-like language, the minimal set of features needed to demonstrate dependent types
+  A very simple ruby-like language, the minimal set of features needed to demonstrate dependent types
 
 The plan:
 
     * A parser
-        Either manually or write a little parser-combinators library for Pseudo
+        use a little parser-combinators library for Pseudo
 
     * A type checker
 
@@ -22,3 +22,10 @@ The plan:
 
 
 
+```coffeescript
+function map(f: y -> z, sequence: List<y>{@n}) -> List<z>{@n}
+  out = []
+  for e in sequence
+    push(out, f(e))
+  out
+```
